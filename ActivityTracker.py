@@ -5,7 +5,7 @@ def main():
     return 0
 
 def getDate():
-    now = datetime.datetime.now()
+    #now = datetime.datetime.now()
     dateString = str(datetime.now())
     return dateString
 
@@ -17,6 +17,12 @@ def newActivity():
     time.sleep(0.5)
     return activityName
 
+def replaceSpaceWithUnderscore(s):
+    words = s.split()
+    return words.join("_")
+
+
 
 
 main()
+
