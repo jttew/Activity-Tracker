@@ -17,7 +17,8 @@ def newActivity():
     time.sleep(0.5)
     return activityName
 
-def replaceSpaceWithUnderscore(s):
+def sanitizeString(s):
+    s = s.lower()
     words = s.split()
     return words.join("_")
 
